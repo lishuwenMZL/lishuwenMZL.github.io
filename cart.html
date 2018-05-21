@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/cart.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+</head>
+<body>
+   <!--1、网页头部-->
+    <header id="header">
+    </header>
+  <div class="main">
+    <!--2、购物车主体-->
+    <div id="shopping-cart"> 
+      <!--2.1 标题行-->
+      <div class="title">  
+        <b>购物车</b>
+        <p>
+          已选
+          <span class="total color">0</span>
+          件商品
+          <span>合计(不计运费)</span>
+          <span class="totalPrices color sum">0.00</span>
+          <span class="unit color">元</span>
+        </p>
+      </div>
+      <!--2.2 内容块-->
+      <div id="box">
+        <!--2.2.1 内容-->
+        <div id="content-box">
+          <div class="imfor-top"> 
+            <div class="check-top"><input type="checkbox">全选</div>
+            <div class="product-top">商品</div>
+            <div class="price-top">单价(元)</div>
+            <div class="num-top">数量</div>
+            <div class="total-top">金额</div>
+            <div class="del-top">操作</div>
+          </div>
+          <div id="content-box-body">
+            <!--1、商品1-->
+
+          </div>
+        </div>
+        <!--2.2.2 计算-->
+        <div class="foot">
+          <div class="base"> 
+            <div class="all">
+              <span><input type="checkbox"></span>全选
+            </div>
+            <a href="#" class="delAll">删除</a>
+          </div>
+          <div class="go-price">
+            <div class="foot-continue"><a href="index.html">&lt;&lt;继续购物</a></div>
+            <div class="foot-selected">已选<span class="totalOne color">0</span>件商品</div>
+            <div class="foot-tol">  
+              <span>合计(不含运费)：</span>
+              <span class="foot-tol">0.00</span>
+              <span class="foot-desc">元</span>
+            </div>
+            <div class="foot-cash">去结算</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--3、页面底部-->
+  <footer id="footer">
+  </footer>
+  <script src="js/jquery-3.2.1.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/cart.js"></script> 
+</body>
+</html>

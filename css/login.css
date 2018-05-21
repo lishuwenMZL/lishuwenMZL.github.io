@@ -1,0 +1,204 @@
+/*头部样式*/
+header{
+	width:990px;
+	height:80px;
+	margin:20px auto; 
+	line-height:80px;
+}
+.head_line{
+	width:1px;
+	height:43px;
+	margin:10px 20px 0 20px;
+	background:#928f8f;
+}
+header img,.p,.head_line{
+	float:left;
+}
+.header_register{
+	float:right;
+}
+.header_register a{
+	color:red;
+}
+/*中间登录样式*/
+section{
+	width:990px;
+/*	height:350px;*/
+	margin:20px auto;
+	border:1px solid #928f8f;
+}
+/*用户登录标题 */
+.login_content{
+	width:300px;
+	float:right;
+	margin-right:84px;
+}
+.login_t{
+	width:300px;
+	height:44px;
+	line-height:44px;
+}
+.login_t #login_te_box01,#login_te_box02{
+	width:150px;
+	height:46px;
+	float:left;
+	text-align:center;
+	line-height:44px;
+/*	border-bottom:2px solid #E6E6E6;*/
+}
+/*标题的底边样式*/
+.bottom{
+	border-bottom:2px solid #DE3030;	
+}
+.login_content .login_t #login_text1,#login_text2{
+	font-size:22px;
+}
+.login_content input{
+	width:286px;
+	height:40px;	
+	border:1px solid #ccc;
+	padding-left:10px;
+}
+/*检查用户名的span*/
+.user  #show_name,#show_pwd{
+	color:#fc0808;
+	position:relative;
+	top:8px;
+	left:5px;
+}
+.bgurl{
+	width:25px;
+	height:25px;
+	display:inline-block;
+	opacity:0;
+}
+.bgi{
+	opacity:1;
+}
+.user .text{
+	width:330px;
+	height:84px;
+}
+
+.user .text input{
+	margin-top:15px;
+}
+.user .text1 input{
+	margin-top:10px;
+
+}
+.user .text1{
+	width:330px;
+	height:76px;
+}
+/*手机登录*/
+.login_ph{
+	width:296px;
+	height:36px;
+	line-height:40px;
+}
+.login_ph .fa-mobile{
+	color:red;
+	margin-right:5px;
+}
+/*忘记密码*/
+.login_ph .login_forget{
+	margin-left:130px;
+	color:#134BA0;
+}
+.login_log input{
+	width:300px;
+	background:#c61e1e;
+	text-align:center;
+	line-height:40px;
+	color:#ffffff;
+	margin-top:0;
+}
+/*登录按钮的边框*/
+.login_log .btn_user,.btn_merchant{
+	border:0px;
+	border-radius:5px;
+}
+.login_line{
+	width:300px;
+	height:25px;
+	margin-top:10px;
+	font-size:14px;
+	text-align:center;
+	color:#625f5f;
+}
+/*线条*/
+.login_line .line_left,.line_right{
+	width:30%;
+	margin-top:10px;
+}
+.login_line .line_left{
+	float:left;
+}
+.login_line .line_right{
+	float:right;
+}
+form.form_user{
+/*	display:none;*/
+}
+/*   商家登录 */
+.form_merchant .merchant .btn_merchant{
+	margin-top:39px;
+}
+.form_merchant .merchant{
+	margin-right:0;
+}
+form.form_merchant{
+	display:none;
+}
+form.form_merchant #show_name1,#show_pwd1{
+	width:280px;
+	height:16px;
+	display:inline-block;
+	color:#fc0808;
+	position:relative;
+	top:8px;
+	left:5px;
+}
+/*小图标*/
+.login_icon{
+	width:300px;
+	height:44px;
+	text-align:center;
+}
+.login_icon .fa-weixin{
+	color:#5BAF30;
+	margin-right:30px;
+}
+.login_icon .fa-weibo{
+	color:#F55643;
+	margin-right:30px;
+}
+.login_icon .fa-qq{
+	color:#039AE3;
+}
+/*底部样式*/
+.foot_box hr{
+	width:90%;
+	margin-top:110px;
+	margin-bottom:20px; 
+}
+.foot_box .foot_box_list{
+	width:990px;
+	height:50px;
+	margin:auto;
+}
+.foot_box .foot_box_list li{
+	float:left;
+	margin-right:10px;
+/*	border-right:1px solid #534f4f; */
+	padding-right:10px;
+}
+.foot_box .foot_box_list li a{
+	color:#534f4f;
+	font-size:14px;
+}
+/*最后一个li*/
+.foot_box .foot_box_list li:last-child{
+	float:right;
+} 

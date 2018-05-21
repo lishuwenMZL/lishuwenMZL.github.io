@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>register</title>
+  <link rel="stylesheet" href="css/base.css">  
+  <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+ </head>
+ <body>
+	<header>
+		<a href="index.html"><img src="img/login/logo.png" alt=""></a>
+		<div class="head_line"></div>
+		<p class="p">中关村在线旗下网上商城</p>
+		<div class="header_register">
+			<span>已有有Z商城账号？</span>
+			<a href="login.html">立即登录</a>
+		</div>		
+   </header>
+	<section>
+		<div class="register">
+			<h2>新用户注册</h2>
+			<p>
+				<span class="span_text">用户名：</span>
+				<input type="text" placeholder="请输入用户名" name="uname" id="uname" autofocus>
+				<img src="img/login/right.png" class="bgurl img1" alt="" />
+				<span class="show1"></span>				
+			</p>
+			<p>
+				<span class="span_text">密码：</span>
+				<input type="password" placeholder="请输入6位的密码" name="upwd" id="upwd">
+				<img src="img/login/right.png" class="bgurl img2" alt="" />
+				<span class="show2"></span>			
+			</p>
+			<p>
+				<span class="span_text">确认密码：</span>
+				<input type="password" placeholder="请再次输入密码" name="cpwd" id="cpwd">
+				<img src="img/login/right.png" class="bgurl img3" alt="" />
+				<span class="show3"></span>			
+			</p>
+			<p>
+				<span class="span_text">手机号码：</span>
+				<input type="tel" placeholder="请输入手机号码" name="phone" id="phone">
+				<img src="img/login/right.png" class="bgurl img4" alt="" />
+				<span class="show4"></span>
+			</p>
+			<p><!--验证码   -->
+				<span class="span_text">验证码：</span>
+				<input type="text" placeholder="请输入验证码" class="ucode" name="ucode" id="ucode">
+				<img id="setUcode" src="php/register/code.php" title="看不清点击换一张" />
+				<img src="img/login/right.png" class="bgurl img5" alt="" />
+				<span class="show"></span>
+			</p>
+			<p><input type="button" id="register" value="注册" class="submit"></p>
+			<div class="reg_other">
+				<div class="reg_title">
+					<span>如果您已经注册，请<a href="login.html">直接登录</a>或者用一下方式进行登录：</span>
+				</div>
+				<div class="order_login">
+					<a href="Javascript:()">
+						<i class="fa fa-weixin fa-2x"></i>
+						<span>微信账号登录</span>
+					</a>
+				</div>
+				<div class="order_login">
+					<a href="Javascript:()">
+						<i class="fa fa-weibo fa-2x"></i>
+						<span>新浪账号登录</span>
+					</a>
+				</div>
+				<div class="order_login">
+					<a href="Javascript:()">
+						<i class="fa fa-qq fa-2x"></i>
+						<span>腾讯QQ登录</span>
+					</a>
+				</div>
+			</div>
+		</div>	
+	</section>
+    <footer>
+		<div class="foot_box">
+			<hr>
+			<div class="foot_box_list">
+				<ul>
+					<li><a href="#">关于Z商城&nbsp;&nbsp;|</a></li>
+					<li><a href="#">联系我们&nbsp;&nbsp;|</a></li>
+					<li><a href="#">帮助中心&nbsp;&nbsp;|</a></li>
+					<li class="list_banquan"><a href="#">&copy;2018.中关村在线&nbsp;版权所有</a></li>
+				</ul>
+			</div>
+		</div>
+   </footer>
+   <script src="js/jquery-3.2.1.js"></script>
+   <script src="js/register.js"></script>
+ </body>  
+</html>

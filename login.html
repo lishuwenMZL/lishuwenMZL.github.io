@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/base.css">  
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <title>login</title>
+ </head>
+ <body>
+   <header>
+		<a href=""><img src="img/login/logo.png" alt=""></a>
+		<div class="head_line"></div>
+		<p class="p">中关村在线旗下网上商城</p>
+		<div class="header_register">
+			<span>还没有Z商城账号？</span>
+			<a href="register.html">立即注册</a>
+		</div>		
+   </header>
+   <section>
+		<div class="login user">			
+			<img src="img/login/login_1.jpg" alt="">
+			<div class="login_content">
+				<div class="login_t">
+					<div class="bottom" id="login_te_box01"><a id="login_text1">登录Z商城</a></div>
+					<div class="" id="login_te_box02"><a id="login_text2">商家登录</a></div>
+			    </div>
+				<!--    用户登录 -->			
+				<form action="get" class="form_user" id="form_user">
+					<div class="user">
+						<div class="text">
+							<input type="text" name="uname" id="uname" placeholder="手机号/邮箱/用户名" autofocus>
+							<img src="img/login/right.png" class="bgurl" alt="" />
+							<span id="show_name"></span>
+						</div>
+						<div class="text1">
+							<input type="password" name="upwd" id="upwd" placeholder="6-8位的密码">
+							<img src="img/login/right.png" class="bgurl" alt="" />
+							<span id="show_pwd"></span>	
+						</div>
+						<div class="login_ph">
+							<a href="Javascript:()" class="login_ph_lo"><i class="fa fa-mobile fa-lg"></i>手机动态登录</a>
+							<a href="register.html" class="login_forget">忘记密码？</a>
+						</div>
+						<div class="login_log">
+							<input type="button" value="登录" class="btn_user">
+						</div>
+						<div class="login_line">
+							<hr class="line_left">
+							<b class="line_text">合作账号登录</b>
+							<hr class="line_right">
+						</div>
+						<div class="login_icon">
+							<a href="Javascript:()">
+								<i class="fa fa-weixin fa-2x"></i>
+								<i class="fa fa-weibo fa-2x"></i>
+								<i class="fa fa-qq fa-2x"></i>						
+							</a>				
+						</div>
+					</div>
+				</form>	
+				<!-- 	商家登录 -->
+				<form action="get" class="form_merchant" id="form_merchant">
+					<div class="login_content merchant">
+						<div class="text bg0">
+							<input type="text" name="mname" id="mname" placeholder="手机号/邮箱/用户名" autofocus>
+							<img src="img/login/right.png" class="bgurl" alt="" />
+							<span id="show_name1"></span>
+						</div>
+						<div class="text bgl2">
+							<input type="password" name="mpwd" id="mpwd" placeholder="6-8位的密码">
+							<img src="img/login/right.png" class="bgurl" alt="" />
+							<span id="show_pwd1"></span>	
+						</div>
+						<div class="login_log">
+							<input type="button" name="btn_merchant" value="登录" class="btn_merchant">
+						</div>
+					</div>
+				</form>				
+			</div>
+		</div>	
+   </section>
+   <footer>
+		<div class="foot_box">
+			<hr>
+			<div class="foot_box_list">
+				<ul>
+					<li><a href="#">关于Z商城&nbsp;&nbsp;|</a></li>
+					<li><a href="#">联系我们&nbsp;&nbsp;|</a></li>
+					<li><a href="#">帮助中心&nbsp;&nbsp;|</a></li>
+					<li class="list_banquan"><a href="#">&copy;2018.中关村在线&nbsp;版权所有</a></li>
+				</ul>
+			</div>
+		</div>
+   </footer>
+   <script src="js/jquery-3.2.1.js"></script>
+   <script src="js/login.js"></script>
+ </body>
+</html>

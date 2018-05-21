@@ -1,0 +1,254 @@
+/* 头部 */
+input{
+	border:none;
+	outline:none;
+}
+body{
+	background:#fff;
+}
+header{
+	width:100%;
+ 	height:191px;
+	line-height:30px;
+	background:#fff;
+	border-bottom:1px solid #E6E6E6;
+	position:relative;
+}
+.bg_box{
+	width:100%;
+	background:#F5F5F5;
+}
+.header .left{
+	width:300px;
+	display:flex;
+	justify-content:space-between;
+/*	margin-right:270px;*/
+}
+.header .right{
+	width:600px;
+	display:flex;
+	justify-content:space-between;
+}
+.phone{
+	width:76px;
+	height:30px;	
+	text-align:center;	
+}
+.er_code{
+	width:122px;
+	height:122px;
+	position:absolute;
+	top:30px;
+	right:246px;
+	display:none;
+	z-index:10;	
+	transition: all .5s linear;
+	border:1px solid #E6E6E6;
+}
+.active2{
+	display: block;
+}
+/* login部分 */
+.nav{
+	width:1200px;
+	height:57px;
+	display:flex;
+	justify-content:space-between;
+	margin-top:30px;
+}
+.nav .search{
+	width:540px;
+	height:36px;
+	border:2px solid #EC3639;
+	line-height:36px;
+	box-sizing:border-box;
+	position:relative;
+	top:8px;
+}
+.nav .search input:nth-child(1){
+	width:440px;
+	height:20px;
+	padding-left:10px;
+	box-sizing:border-box;
+}
+.nav .search input:nth-child(2){
+	width:75px;
+	height:36px;
+	background:#EC3639;
+	color:#fff;
+	font-size:16px;
+	text-align:center;
+	line-height:32px;
+	position:relative;
+	right:-18px;
+	top:-2px;
+}
+/* 订单 */
+.nav .list{
+	width:300px;
+	display:flex;
+	justify-content:space-between;
+	font-size:15px;
+	position:relative;
+	top:10px;
+}
+ .nav .list .fa{
+	margin-right:10px;
+}
+.nav .list .cart_num{
+	width:14px;
+	height:14px;
+	border-radius:7px;
+	background:red;
+	display:inline-block;
+	text-align:center;
+	line-height:14px;
+	font-size:12px;
+	position:relative;
+	top:-12px;
+	left:-66px;
+	color:#fff;
+}
+/* 目录导航 */
+.catalog{
+	width:600px;
+	display:flex;
+	justify-content:space-between;
+	font-size:20px;
+	margin-top:30px;
+	text-align:center;
+	line-height:40px;
+}
+/*.catalog > a:first-child:hover div.catalog_list{*/
+/*	display:block;*/
+/*}*/
+.catalog a:nth-child(1){
+	width:160px;
+	height:40px;
+	display:inline-block;
+	color:#fff;
+	font-size:17px;
+	background:#EC3639;
+}
+.catalog a:nth-child(1) i{
+	margin-right:10px;
+}
+div.leftList{
+	width:37px;
+	height:100%;	
+ 	position:fixed;
+	top:0;
+	right:0;
+	background:#000;
+	text-align:center;
+	padding-top:100px;
+	z-index:20;
+}
+div.leftList a{
+    width:37px;
+	height:35px;
+	display:inline-block;
+	line-height:35px;
+	color:#fff;
+}
+ div.leftList a span{
+	width:90px;
+	height:35px;
+	line-height:35px;
+	color:#fff;
+	position:absolute;
+	right:37px;
+	background:#FF3333;
+	margin-top:4px;
+	opacity:0;
+	/* transform:translateX(146px); */
+	transition:all .5s ease;
+}
+div.leftList a span.showLi{
+	opacity:1;
+}
+div.leftList a .fa{
+	color:#fff;
+	width:37px;
+	height:35px;
+	line-height:37px;
+	display:inline-block;
+	transition:all .5s ease;
+}
+div.leftList a.backTop{
+	position:relative;
+	top:380px;
+}
+div.leftList a .fa:hover{
+	background:#EC3639;
+}
+div.leftList .backTop{
+	background:#EC3639;
+}
+/* 目录列表 */
+.catalog_list{
+	position:relative; 	
+	color:#fff;
+	font-size:16px;
+	display:none;
+}
+/*.catalog_list{display:none;}*/
+.catashow{
+	display:block;
+}
+.catalog_list > ul{
+	width:160px;
+	height:400px;
+	position:absolute;
+	top:-1px;	
+	z-index:999;
+	background:#454545;
+	text-align:center;
+}
+.catalog_list > ul > li{
+	height:50px;
+	border-bottom:1px solid #4D4D4D;	
+	line-height:40px;
+}
+.active{
+	background:#fff;
+	color:#000;
+}
+/* 小图片 */
+.catalog_list > ul > li > i{
+	margin-right:20px;
+}
+.catalog_list > ul > li i.fa-mobile-phone{
+	position:relative;
+	top:5px;
+}
+/* 大于号 */
+.catalog_list > ul > li > b{
+	margin-left:20px;
+	color:#808080;
+}
+.catalog_info{
+	position:relative;
+}
+/* 列表详情 */
+.catalog_info .infomation {
+	width:620px;
+	height:400px;
+	position:absolute;
+	top:0px;
+	left:158px;
+	z-index:99;
+	color:#000;
+	font-size:14px;
+	background:#fff;
+	display:none;
+	box-shadow:0 -2px 2px #EEE;
+}
+/* 隐藏的详情图片 */
+.catalog_info .infomation .infor_text{	
+	margin:10px 30px 0 50px;
+	line-height:25px;
+}
+.catalog_info .infomation .infor_text > a{
+	margin:0 30px 50px 0;
+}
